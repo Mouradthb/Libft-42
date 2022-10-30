@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 12:22:25 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/27 09:42:24 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/10/30 21:19:30 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
 // int main ()
 // {
 // 	int a[6] = {1,2,3,4,5,6};

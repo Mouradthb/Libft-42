@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 13:30:21 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/27 15:32:06 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/10/30 20:47:10 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t		i;
 	size_t		len1;
-	// size_t		len2;
 	char		*p;
 
 	i = 0;
@@ -41,7 +40,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	p[i] = '\0';
 	return (p);
 }
-
 
 // char	*ft_substr(char const *s, unsigned int start, size_t len)
 // {

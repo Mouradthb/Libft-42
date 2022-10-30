@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 18:49:16 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/27 10:04:54 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/10/30 20:48:14 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,23 @@ void	*ft_memset(void *b, int c, size_t len)
 
 // int main ()
 // {
-// 	size_t i = 3;
-// 	char d[] = "1234567";
+// 	size_t i = 0;
+// 	size_t j = 0;
+// 	char d[] = "1234567555555";
+// 	char b[] = "mourad";
 
-// 	while (d[i] && i<strlen(d))
-// 		i++;
-// 	ft_memset(&d[2] ,'c', 1);
+// 	while (d[i])
+// 	{
+// 		ft_memset(&d[i+3], b[j], 1);
+// 			j++;
+// 			i++;
+// 		if (b[j] == '\0')
+// 		{
+// 			while(d[i])
+// 			i++;
+// 		}
+// 	}
 // 	printf("%s\n", d);
+// 	// printf()
 // 	// printf("%s",memset(d,'c', i));
 // }

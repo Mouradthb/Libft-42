@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 14:52:50 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/26 19:32:44 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/10/30 20:46:25 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strchr(const char *s, int c)
 			return (0);
 		s++;
 	}
-	return ((char*)s);
+	return ((char *)s);
 }
 // int main ()
 // {
