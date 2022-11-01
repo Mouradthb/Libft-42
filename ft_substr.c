@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 13:30:21 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/30 20:47:10 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/01 13:56:27 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char		*p;
 
 	i = 0;
-	len1 = ft_strlen(s);
 	if (s == NULL)
 		return (NULL);
-	if (len1 == 0 || len <= 0)
+	len1 = ft_strlen(s);
+	if (len == 0)
 		return (ft_strdup(""));
 	if (start > len1)
 		return (ft_strdup(""));

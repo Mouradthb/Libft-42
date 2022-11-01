@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 17:46:22 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/31 21:25:21 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/01 22:30:51 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,16 @@ t_list	*ft_lstnew(void *content)
 	t_list	*head;
 
 	head = malloc(sizeof(t_list));
+	if(!head)
+		return (NULL);
 	head->content = content;
 	head->next = NULL;
 	return (head);
 }
-int main ()
-{
-	int a = 45;
-	t_list *head = ft_lstnew(&a);
-	printf("%d\n", *((int *)head->content));
-}
+
+// int main ()
+// {
+// 	int a = 45;
+// 	t_list *head = ft_lstnew(&a);
+// 	printf("%d\n", *((int *)head->content));
+// }

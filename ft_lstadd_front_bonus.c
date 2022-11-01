@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 21:06:02 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/31 22:17:59 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/01 16:45:46 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,5 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	new->next = *lst;
 	*lst = new;
-}	
+}
+

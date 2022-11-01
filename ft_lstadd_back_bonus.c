@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 10:51:29 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/01 14:36:47 by mthabit          ###   ########.fr       */
+/*   Created: 2022/11/01 20:44:30 by mthabit           #+#    #+#             */
+/*   Updated: 2022/11/01 22:53:46 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if (n == -2147483648)
-		ft_putstr_fd("-2147483648", fd);
-	else if (n < 0)
-	{
-		ft_putchar_fd('-', fd);
-		ft_putnbr_fd(-n, fd);
-	}
-	else if (n >= 10)
-	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putchar_fd((n % 10) + 48, fd);
-	}
+	if (!lst || !new)
+		return ;
+	else if (*lst == 0)
+		*lst = new;
 	else
-		ft_putchar_fd(n + 48, fd);
+	ft_lstlast(*lst)->next = new ;
+	new = *lst;
 }
+// int main ()
+// {
+// 	t_list	*head;
+// 	head = ft_lstnew("trrr");
+// 	ft_lstadd_back(&head,ft_lstnew("ok"));
+// 	printf("%s", head->next->content);
+// }
+

@@ -1,33 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 14:57:56 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/01 21:41:52 by mthabit          ###   ########.fr       */
+/*   Created: 2022/11/01 15:56:06 by mthabit           #+#    #+#             */
+/*   Updated: 2022/11/01 20:36:58 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+int	ft_lstsize(t_list *lst)
 {
-	int		i;
+	t_list	*p;
+	int		cnt;
 
-	i = ft_strlen(s);
-	while (i >= 0)
+	p = lst;
+	cnt = 0;
+	while (p != NULL)
 	{
-		if (s[i] == (unsigned char)c)
-			return ((char *)(s + i));
-		i--;
+		cnt += 1;
+		p = p->next;
 	}
-	return (NULL);
+	return (cnt);
 }
+
 // int main ()
-// {
-// 	char h[]="kokodorasta";
-// 	char n ='z';
-// 	printf("%s", ft_strrchr(h,n));
-// }
+// {	
+// 	t_list	*list;
+// 	int		i;
+
+// 	i = 0;
+// 	list = ft_lstnew("head");
+// 	while (i < 5)
+// 	{
+// 		ft_lstadd_front(&list,ft_lstnew(("new")));
+// 		i++;
+// 	}
+// 	printf("%d\n", ft_lstsize(list));
+// 	while (list)
+// 	{
+// 		printf("%s\n", list->content);
+// 		list = list->next;
+// 	}
+//}
