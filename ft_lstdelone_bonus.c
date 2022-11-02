@@ -1,32 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/01 20:44:30 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/02 21:48:01 by mthabit          ###   ########.fr       */
+/*   Created: 2022/11/02 13:49:26 by mthabit           #+#    #+#             */
+/*   Updated: 2022/11/02 16:12:58 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if (!lst || !new)
+	if (!lst || !del)
 		return ;
-	else if (*lst == 0)
-		*lst = new;
-	else
-		ft_lstlast(*lst)->next = new;
-	new = *lst;
+	del(lst->content);
+	free(lst);
 }
-
-// int main ()
-// {
-// 	t_list	*head;
-// 	head = ft_lstnew("trrr");
-// 	ft_lstadd_back(&head,ft_lstnew("ok"));
-// 	printf("%s", head->next->content);
-// }

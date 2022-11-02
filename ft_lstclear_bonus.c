@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/01 20:44:30 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/02 21:48:01 by mthabit          ###   ########.fr       */
+/*   Created: 2022/11/02 16:15:48 by mthabit           #+#    #+#             */
+/*   Updated: 2022/11/02 16:53:31 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	if (!lst || !new)
-		return ;
-	else if (*lst == 0)
-		*lst = new;
-	else
-		ft_lstlast(*lst)->next = new;
-	new = *lst;
-}
+	t_list	*temp;
 
-// int main ()
-// {
-// 	t_list	*head;
-// 	head = ft_lstnew("trrr");
-// 	ft_lstadd_back(&head,ft_lstnew("ok"));
-// 	printf("%s", head->next->content);
-// }
+	if (!lst || !del)
+		return ;
+	while (*lst)
+	{
+		temp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = temp;
+	}
+	*lst = 0;
+}
