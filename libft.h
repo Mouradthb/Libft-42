@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 18:50:42 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/02 22:40:31 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/03 10:20:28 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,7 @@
 # include <stdlib.h>
 # include <string.h>
 
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+/* ******************************** Mandatory ******************************* */
 
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
@@ -60,6 +56,12 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putendl_fd(char *s, int fd);
 
 /* ********************************** Bonus ********************************* */
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);

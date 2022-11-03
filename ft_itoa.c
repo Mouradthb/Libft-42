@@ -6,13 +6,13 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:56:35 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/27 12:17:00 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/03 12:42:54 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_intlen(int n)
+static int	ft_intlen(int n)
 {
 	int	i;
 
@@ -30,25 +30,25 @@ char	*ft_itoa(int n)
 	int		len;
 	char	*alloc;
 	int		start;
+	long	nl;
 
-	start = n < 0;
+	nl = (long)n;
+	start = nl < 0;
 	len = ft_intlen(n);
 	alloc = (char *)malloc(sizeof(char) * (len + 1));
 	if (!alloc)
 		return (NULL);
 	alloc[len] = '\0';
-	if (n < 0)
+	if (nl < 0)
 	{
-		if (n == -2147483648)
-			return (ft_strdup("-2147483648"));
-		n = -n;
+		nl = -nl;
 		alloc[0] = '-';
 	}
 	len--;
 	while (len >= start)
 	{
-		alloc[len] = ((n % 10) + 48);
-		n = (n / 10);
+		alloc[len] = ((nl % 10) + 48);
+		nl = (nl / 10);
 		len--;
 	}
 	return (alloc);
@@ -56,6 +56,6 @@ char	*ft_itoa(int n)
 
 // int main()
 // {
-// 	int a = 0;
+// 	int a = -2147483648;
 // 	printf("%s",ft_itoa(a));
 // }

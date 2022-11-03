@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:50:43 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/01 17:23:14 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/03 11:58:46 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,30 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*alloc;
 	size_t	i;
+	size_t	j;
 	size_t	soml;
 
 	if (!s1 || !s2)
-		return (NULL);
+		return (0);
 	i = 0;
 	soml = ((ft_strlen(s1) + ft_strlen(s2)) + 1);
 	alloc = (char *)malloc(sizeof(char) * (soml));
 	if (!alloc)
 		return (NULL);
-	while (s1[i] != '\0')
+	while (i < ft_strlen(s1))
 	{
 		alloc[i] = s1[i];
 		i++;
 	}
-	ft_memcpy(alloc + i, s2, soml);
-	alloc[soml] = '\0';
+	j = 0;
+	while (j < ft_strlen(s2))
+	{
+		alloc[i++] = s2[j++];
+	}
+	alloc[i] = '\0';
 	return (alloc);
 }
 // int main ()
 // {
-// 	char a[]="cocoderasta!!!!!!!!!!!!!!!!";
-// 	char b[]="cocoritta";
-// 	printf("%s",ft_strjoin(b,a));
+// 	printf("%s",ft_strjoin("",""));
 // }
