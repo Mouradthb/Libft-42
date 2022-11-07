@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 11:44:16 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/26 19:36:08 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/07 22:05:39 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-// int main ()
-// {
-// 	char a[]= "asarbane9aw9aw";
-// 	//char *p = strchr(a,'b');
-// 	ft_bzero(&a[5],5);
-//  	//ft_bzero(a , (strlen(a)-5));
-//  	printf("%s\n" , a);
-// }

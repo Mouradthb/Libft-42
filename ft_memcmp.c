@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 14:44:51 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/03 10:54:31 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/07 22:08:35 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 // int main ()
 // {
-// 	printf("%d", ft_memcmp("teste", "tesfg", 5));
+// 	printf("%d", ft_memcmp("teste", "test", -1));
 // }
