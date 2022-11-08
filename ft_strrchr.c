@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 14:57:56 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/01 21:41:52 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 22:46:33 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,9 @@ char	*ft_strrchr(const char *s, int c)
 	i = ft_strlen(s);
 	while (i >= 0)
 	{
-		if (s[i] == (unsigned char)c)
+		if (s[i] == (char)c)
 			return ((char *)(s + i));
 		i--;
 	}
 	return (NULL);
 }
-// int main ()
-// {
-// 	char h[]="kokodorasta";
-// 	char n ='z';
-// 	printf("%s", ft_strrchr(h,n));
-// }

@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 14:52:50 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/01 21:42:03 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 20:30:41 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != (unsigned char)c)
+	while (*s != (char)c)
 	{
 		if (*s == '\0')
 			return (NULL);
@@ -22,15 +22,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)s);
 }
-// int main ()
-// {
-// 	char h[]="kokoderasta";
-// 	char n ='d';
-// 	printf("%s", ft_strchr(h,n));
-// }
-// int main ()
-// {
-// 	char *h="testok";
-// 	// char n ='m';
-// 	printf("%s\n", ft_strchr(h,1024));
-// }

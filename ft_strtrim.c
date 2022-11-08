@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 17:21:10 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/03 12:20:56 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 15:42:46 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (ft_calloc(1, 1));
 	return (ft_substr(s1, j, i + 1 - j));
 }
-
-// int main ()
-// {
-// 	printf("%s", ft_strtrim("", "cdef"));
-// }

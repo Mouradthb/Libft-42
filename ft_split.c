@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 09:01:56 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/27 14:22:51 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 22:46:02 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,24 +84,15 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_getstr(s, alloc, c, s_beg));
 }
-
-// int	main()
+// int main ()
 // {
-// 	char	*h;
-// 	char	n;
-// 	char	**ptr;
-// 	int		i;
-
-// 	h = "      split       this for   me  !       ";
-// 	n = ' ';
-// 	ptr = ft_split(h, n);
-// 	i = 0;
-// 	printf("%zu\n----\n", scount(h, n));
-// 	while (ptr[i])
+// 	int i = 0;
+// 	char a[]= "cosa makoba rbaola";
+// 	char b = 'o';
+// 	char **p = ft_split(a, b);
+// 	while (p[i])
 // 	{
-// 		printf("|%s|\n", ptr[i]);
+// 		printf("%s\n", p[i]);
 // 		i++;
 // 	}
-// 	printf("%s", ptr[5]);
-// 	while (1);
 // }

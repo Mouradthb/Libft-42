@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:03:04 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/26 21:27:41 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 15:41:44 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	if (!haystack && len == 0)
 		return (NULL);
-	if (*needle == '\0')
+	if (*needle == 0)
 		return ((char *)haystack);
 	i = ft_strlen(haystack);
 	j = ft_strlen(needle);

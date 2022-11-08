@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 13:30:21 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/01 13:56:27 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 17:10:56 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,31 +40,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	p[i] = '\0';
 	return (p);
 }
-
-// char	*ft_substr(char const *s, unsigned int start, size_t len)
-// {
-// 	size_t	i;
-// 	char	*p;
-
-// 	i = 0;
-// 	if (!s)
-// 		return (NULL);
-// 	p = malloc((len + 1) * sizeof(char));
-// 	if (!p)
-// 		return (NULL);
-// 	while (i < len && s[start])
-// 	{
-// 		p[i] = s[start];
-// 		i++;
-// 		start++;
-// 	}
-// 	p[i] = '\0';
-// 	return (p);
-// }
-
-// int main()
-// {
-// 	char str[] = "lorem ipsum dolor itus";
-// 	// int len =  ft_strlen(ft_substr(str, 3, 6));
-// 	printf("%s", ft_substr(str, 3, 6));
-// }

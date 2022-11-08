@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 19:06:47 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/26 21:22:47 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 15:25:46 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,36 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[j] = '\0';
 	return (dln + sln);
 }
-// size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
-// {
-// 	size_t	i;
-// 	size_t	dest_len;
-// 	size_t	src_len;
-
-// 	i = 0;
-// 	dest_len = ft_strlen(dest);
-// 	src_len = ft_strlen(src);
-// 	if (!dest && dstsize == 0)
-// 		return (src_len);
-// 	if (dstsize -1 < dest_len || dstsize == 0)
-// 		return (dstsize + src_len);
-// 	if (dstsize -1 > dest_len)
-// 	{
-// 		while (src[i] != '\0' && dest_len + 1 + i < dstsize)
-// 		{
-// 			dest[dest_len + i] = src[i];
-// 			i++;
-// 		}
-// 	}
-// 	dest[dest_len + i] = '\0';
-// 	return (dest_len + src_len);
-// }
-// int main ()
-// {
-// 	// char d[20]="somo";
-// 	char s[]="yamo";
-// 	// char d1[20]="somo";
-// 	// char s1[]="yamo";
-// 	printf("%zu\n",strlcat(((void *)0), s, 0));
-// 	printf("%zu\n", ft_strlcat(((void *)0), s, 0));
-// }

@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:50:43 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/03 11:58:46 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 15:07:14 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	alloc[i] = '\0';
 	return (alloc);
 }
-// int main ()
-// {
-// 	printf("%s",ft_strjoin("",""));
-// }

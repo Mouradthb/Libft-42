@@ -6,19 +6,14 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 09:45:11 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/27 10:05:06 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 15:23:22 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <fcntl.h>
 
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-
-// int main ()
-// {
-// 	char k ='p';
-// 	ft_putchar_fd(k,1);
-// }

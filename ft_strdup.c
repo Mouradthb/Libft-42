@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:05:47 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/23 15:36:11 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 15:25:16 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,3 @@ char	*ft_strdup(const char *s1)
 	m[i] = '\0';
 	return (m);
 }
-// int main ()
-// {
-// 	char	*a=	NULL;
-// 	// char	*a1 = NULL;
-// 	// printf("%p\n",a);
-// 	printf("%s\n",ft_strdup(a));
-// 	// printf("%s",strdup(a1));
-// }

@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 19:36:12 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/27 12:08:41 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/08 15:07:02 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-
-// void	me(unsigned int i, char *c)
-// {
-// 	i = 32;
-// 	*c += i;
-// }
-
-// int main ()
-// {
-// 	char a[] ="AKAKAKAKAKAKA";
-// 	ft_striteri(a,me);
-// 	printf("%s",a);
-// }
