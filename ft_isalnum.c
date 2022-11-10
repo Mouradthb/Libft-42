@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 15:17:34 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/02 22:26:24 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/10 09:36:10 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-// int main ()
-// {
-//     char a = ' ';
-//     printf("%d", ft_isalnum(a));
-// }

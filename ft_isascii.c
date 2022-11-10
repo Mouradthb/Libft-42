@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 15:28:38 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/27 09:34:56 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/10 09:36:52 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-
-// int main ()
-// {
-//     unsigned char a = 'ə';
-//     printf("%d", ft_isascii(a));
-// }

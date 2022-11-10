@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 17:13:41 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/08 22:51:21 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/10 09:40:47 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*ret;
+	t_list	*lsret;
 	t_list	*lstn;
 
 	if (!lst || !f || !del)
@@ -23,14 +23,14 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	if (!lstn)
 		return (NULL);
 	lstn->content = f(lst->content);
-	ret = lstn;
+	lsret = lstn;
 	lst = lst->next;
 	while (lst)
 	{
 		lstn->next = ft_lstnew(NULL);
 		if (!lstn->next)
 		{
-			ft_lstclear(&ret, del);
+			ft_lstclear(&lsret, del);
 			return (NULL);
 		}
 		lstn->next->content = f(lst->content);
@@ -38,10 +38,5 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		lstn = lstn->next;
 	}
 	lstn->next = NULL;
-	return (ret);
+	return (lsret);
 }
-
-// int main ()
-// {
-// 	t_list
-// }

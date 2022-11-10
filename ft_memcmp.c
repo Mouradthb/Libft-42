@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 14:44:51 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/07 22:08:35 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/09 15:41:53 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i--;
 	return (p1[i] - p2[i]);
 }
-// int main ()
-// {
-// 	printf("%d", ft_memcmp("teste", "test", -1));
-// }

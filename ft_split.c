@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 09:01:56 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/08 22:46:02 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/10 09:32:53 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,15 +84,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_getstr(s, alloc, c, s_beg));
 }
-// int main ()
-// {
-// 	int i = 0;
-// 	char a[]= "cosa makoba rbaola";
-// 	char b = 'o';
-// 	char **p = ft_split(a, b);
-// 	while (p[i])
-// 	{
-// 		printf("%s\n", p[i]);
-// 		i++;
-// 	}
-// }

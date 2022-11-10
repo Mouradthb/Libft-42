@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 15:56:06 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/07 22:04:50 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/09 10:59:17 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,23 +28,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (cnt);
 }
-
-// int main ()
-// {	
-// 	t_list	*list;
-// 	int		i;
-
-// 	i = 0;
-// 	list = ft_lstnew("head");
-// 	while (i < 5)
-// 	{
-// 		ft_lstadd_front(&list,ft_lstnew(("new")));
-// 		i++;
-// 	}
-// 	printf("%d\n", ft_lstsize(list));
-// 	while (list)
-// 	{
-// 		printf("%s\n", list->content);
-// 		list = list->next;
-// 	}
-//}

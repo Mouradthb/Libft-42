@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 12:59:53 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/08 14:54:36 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/09 17:39:06 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			*cp_dst++ = *cp_src++;
 	return (dst);
 }
-

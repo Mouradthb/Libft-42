@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 18:49:10 by mthabit           #+#    #+#             */
-/*   Updated: 2022/10/27 09:33:58 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/10 09:37:15 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
-// int main ()
-// {
-// 	char s = ' ';
-// 	printf("%d", ft_isprint(s));
-// 

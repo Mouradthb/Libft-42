@@ -6,7 +6,7 @@
 /*   By: mthabit <mthabit@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 13:32:49 by mthabit           #+#    #+#             */
-/*   Updated: 2022/11/07 22:08:30 by mthabit          ###   ########.fr       */
+/*   Updated: 2022/11/09 14:12:11 by mthabit          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// int main ()
-// {
-// 	int j=0;
-// 	int	p[8]= {1,256,3,4,5,6,7,8};
-// 	int *l = memchr(p, 256, 8*sizeof(int));
-// 	while (j<7)
-// 	{
-// 		printf("%d | ", l[j]);
-// 		j++;
-// 	}
-// }
